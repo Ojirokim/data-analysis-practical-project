@@ -21,3 +21,9 @@ __pycache__/
 data/*
 !data/.gitkeep
 !data/README.md
+
+# Data files
+*.csv
+*.xlsx
+*.json
+*.parquet
