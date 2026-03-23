@@ -1,0 +1,2397 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='course_final' inline='true' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='course_final' name='textscan.1igi5ol0gqugm619rmijh1xtcav8'>
+            <connection class='textscan' directory='C:/Users/magic/OneDrive/바탕 화면/Python Projects/data-analysis-practical-project/김규열' filename='course_final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1igi5ol0gqugm619rmijh1xtcav8' name='course_final.csv' table='[course_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='course_id' ordinal='0' />
+            <column datatype='string' name='userid_DI' ordinal='1' />
+            <column datatype='integer' name='registered' ordinal='2' />
+            <column datatype='integer' name='viewed' ordinal='3' />
+            <column datatype='integer' name='explored' ordinal='4' />
+            <column datatype='integer' name='certified' ordinal='5' />
+            <column datatype='string' name='final_cc_cname_DI' ordinal='6' />
+            <column datatype='string' name='LoE_DI' ordinal='7' />
+            <column datatype='string' name='YoB' ordinal='8' />
+            <column datatype='string' name='gender' ordinal='9' />
+            <column datatype='real' name='grade' ordinal='10' />
+            <column datatype='date' name='start_time_DI' ordinal='11' />
+            <column datatype='date' name='last_event_DI' ordinal='12' />
+            <column datatype='real' name='nevents' ordinal='13' />
+            <column datatype='real' name='ndays_act' ordinal='14' />
+            <column datatype='real' name='nchapters' ordinal='15' />
+            <column datatype='integer' name='nforum_posts' ordinal='16' />
+            <column datatype='integer' name='start_year' ordinal='17' />
+            <column datatype='string' name='age' ordinal='18' />
+            <column datatype='string' name='age_group' ordinal='19' />
+            <column datatype='integer' name='exam_flag' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>course_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[course_id]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>course_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>userid_DI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[userid_DI]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>userid_DI</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>registered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[registered]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>registered</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>viewed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[viewed]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>viewed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>explored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[explored]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>explored</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>certified</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[certified]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>certified</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>final_cc_cname_DI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[final_cc_cname_DI]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>final_cc_cname_DI</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoE_DI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoE_DI]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>LoE_DI</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YoB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[YoB]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>YoB</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_time_DI</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[start_time_DI]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>start_time_DI</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_event_DI</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_event_DI]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>last_event_DI</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nevents</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nevents]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>nevents</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ndays_act</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ndays_act]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>ndays_act</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nchapters</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nchapters]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>nchapters</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nforum_posts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nforum_posts]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>nforum_posts</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start_year]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>start_year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exam_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[exam_flag]</local-name>
+            <parent-name>[course_final.csv]</parent-name>
+            <remote-alias>exam_flag</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[course_final.csv_D85C0318BA094417A2DB368AB0C05594]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='viewed_rate' datatype='real' name='[Calculation_1817819282219008]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([viewed]) / SUM([registered])' />
+      </column>
+      <column caption='explored_rate_fromview' datatype='real' name='[Calculation_1817819282776065]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([explored]) / SUM([viewed])' />
+      </column>
+      <column caption='certified_rate_fromexplored' datatype='real' name='[Calculation_1817819283271682]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([certified]) / SUM([explored])' />
+      </column>
+      <column caption='explored_rate' datatype='real' name='[Calculation_1817819290406915]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([explored]) / SUM([registered])' />
+      </column>
+      <column caption='certified_rate' datatype='real' name='[Calculation_1817819290574852]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([certified]) / SUM([registered])' />
+      </column>
+      <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+      </column>
+      <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+      </column>
+      <column caption='LoE DI' datatype='string' name='[LoE_DI]' role='dimension' type='nominal' />
+      <column caption='Yo B' datatype='string' name='[YoB]' role='dimension' type='nominal' />
+      <column caption='course_final.csv' datatype='table' name='[__tableau_internal_object_id__].[course_final.csv_D85C0318BA094417A2DB368AB0C05594]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='string' name='[age]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Certified' datatype='integer' name='[certified]' role='measure' type='quantitative' />
+      <column caption='certified이탈률' datatype='real' name='[certified_rate_fromexplored (copy)_1817819292954631]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1-SUM([certified]) / SUM([explored])' />
+      </column>
+      <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+      <column caption='Exam Flag' datatype='integer' name='[exam_flag]' role='measure' type='quantitative' />
+      <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+      <column caption='explored이탈률' datatype='real' name='[explored_rate_fromview (copy)_1817819292745734]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1- SUM([explored]) / SUM([viewed])' />
+      </column>
+      <column caption='final cc cname DI' datatype='string' name='[final_cc_cname_DI]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Grade' datatype='real' name='[grade]' role='measure' type='quantitative' />
+      <column caption='last event DI' datatype='date' name='[last_event_DI]' role='dimension' type='ordinal' />
+      <column caption='Nchapters' datatype='real' name='[nchapters]' role='measure' type='quantitative' />
+      <column caption='Ndays Act' datatype='real' name='[ndays_act]' role='measure' type='quantitative' />
+      <column caption='Nevents' datatype='real' name='[nevents]' role='measure' type='quantitative' />
+      <column caption='Nforum Posts' datatype='integer' name='[nforum_posts]' role='measure' type='quantitative' />
+      <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+      <column caption='start time DI' datatype='date' name='[start_time_DI]' role='dimension' type='ordinal' />
+      <column caption='Start Year' datatype='integer' name='[start_year]' role='dimension' type='quantitative' />
+      <column caption='userid DI' datatype='string' name='[userid_DI]' role='dimension' type='nominal' />
+      <column caption='Viewed' datatype='integer' name='[viewed]' role='measure' type='quantitative' />
+      <column caption='viewed이탈률' datatype='real' name='[viewed_rate (copy)_1817819292450821]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1-SUM([viewed]) / SUM([registered])' />
+      </column>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;South Korea&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+          <calculation class='tableau' formula='&quot;All&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='course_final.csv' id='course_final.csv_D85C0318BA094417A2DB368AB0C05594'>
+            <properties context=''>
+              <relation connection='textscan.1igi5ol0gqugm619rmijh1xtcav8' name='course_final.csv' table='[course_final#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='course_id' ordinal='0' />
+                  <column datatype='string' name='userid_DI' ordinal='1' />
+                  <column datatype='integer' name='registered' ordinal='2' />
+                  <column datatype='integer' name='viewed' ordinal='3' />
+                  <column datatype='integer' name='explored' ordinal='4' />
+                  <column datatype='integer' name='certified' ordinal='5' />
+                  <column datatype='string' name='final_cc_cname_DI' ordinal='6' />
+                  <column datatype='string' name='LoE_DI' ordinal='7' />
+                  <column datatype='string' name='YoB' ordinal='8' />
+                  <column datatype='string' name='gender' ordinal='9' />
+                  <column datatype='real' name='grade' ordinal='10' />
+                  <column datatype='date' name='start_time_DI' ordinal='11' />
+                  <column datatype='date' name='last_event_DI' ordinal='12' />
+                  <column datatype='real' name='nevents' ordinal='13' />
+                  <column datatype='real' name='ndays_act' ordinal='14' />
+                  <column datatype='real' name='nchapters' ordinal='15' />
+                  <column datatype='integer' name='nforum_posts' ordinal='16' />
+                  <column datatype='integer' name='start_year' ordinal='17' />
+                  <column datatype='string' name='age' ordinal='18' />
+                  <column datatype='string' name='age_group' ordinal='19' />
+                  <column datatype='integer' name='exam_flag' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+        <calculation class='tableau' formula='&quot;All&quot;' />
+        <members>
+          <member value='&quot;All&quot;' />
+          <member value='&quot;Harvard - Health in Numbers&quot;' />
+          <member value='&quot;Harvard - Human Health&quot;' />
+          <member value='&quot;Harvard - Introduction to Computer Science&quot;' />
+          <member value='&quot;Harvard - Justice&quot;' />
+          <member value='&quot;Harvard - The Ancient Greek Hero&quot;' />
+          <member value='&quot;MIT - Circuits and Electronics&quot;' />
+          <member value='&quot;MIT - Electricity and Magnetism&quot;' />
+          <member value='&quot;MIT - Elements of Structures&quot;' />
+          <member value='&quot;MIT - Intro to CS&quot;' />
+          <member value='&quot;MIT - Introduction to Biology&quot;' />
+          <member value='&quot;MIT - Mechanics ReView&quot;' />
+          <member value='&quot;MIT - Solid-State Chemistry&quot;' />
+          <member value='&quot;MIT - The Challenges of Global Poverty&quot;' />
+        </members>
+      </column>
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Parameter 1]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;HarvardX/CB22x/2013_Spring&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+      <datasources>
+        <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+        <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+        </column>
+        <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]'>
+        <groupfilter function='member' level='[none:Calculation_2072081362505728:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Certified'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='certified_rate' datatype='real' name='[Calculation_1817819290574852]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([certified]) / SUM([registered])' />
+            </column>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Certified' datatype='integer' name='[certified]' role='measure' type='quantitative' />
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[certified]' derivation='Sum' name='[sum:certified:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1817819290574852]' derivation='User' name='[usr:Calculation_1817819290574852:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290574852:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:certified:qk]' />
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290574852:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:certified:qk]</run>
+                <run fontsize='20'>&gt;</run>
+                <run fontsize='20'>Æ&#10;</run>
+                <run fontsize='20'><![CDATA[<[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290574852:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D967F7C3-314E-4AE8-A4D7-9871D4C6F0D7}' />
+    </worksheet>
+    <worksheet name='Certified 이탈률'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Certified' datatype='integer' name='[certified]' role='measure' type='quantitative' />
+            <column caption='certified이탈률' datatype='real' name='[certified_rate_fromexplored (copy)_1817819292954631]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1-SUM([certified]) / SUM([explored])' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[certified_rate_fromexplored (copy)_1817819292954631]' derivation='User' name='[usr:certified_rate_fromexplored (copy)_1817819292954631:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:certified_rate_fromexplored (copy)_1817819292954631:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:certified_rate_fromexplored (copy)_1817819292954631:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:certified_rate_fromexplored (copy)_1817819292954631:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC21B9A9-406A-4A83-BF5F-33D9C04AA58D}' />
+    </worksheet>
+    <worksheet name='Exp-Cert'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Certified rate compared to Explored</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='certified_rate_fromexplored' datatype='real' name='[Calculation_1817819283271682]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([certified]) / SUM([explored])' />
+            </column>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Certified' datatype='integer' name='[certified]' role='measure' type='quantitative' />
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1817819283271682]' derivation='User' name='[usr:Calculation_1817819283271682:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819283271682:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819283271682:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819283271682:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4120E8B-72CA-4E76-A666-F6A67980F0D7}' />
+    </worksheet>
+    <worksheet name='Explored'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='explored_rate' datatype='real' name='[Calculation_1817819290406915]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([explored]) / SUM([registered])' />
+            </column>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[explored]' derivation='Sum' name='[sum:explored:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1817819290406915]' derivation='User' name='[usr:Calculation_1817819290406915:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290406915:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:explored:qk]' />
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290406915:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:explored:qk]</run>
+                <run fontsize='20'>&gt;</run>
+                <run fontsize='20'>Æ&#10;</run>
+                <run fontsize='20'><![CDATA[<[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819290406915:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9449538B-7FF7-436A-A3C5-9505E4DE01FA}' />
+    </worksheet>
+    <worksheet name='Explored 이탈률'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+            <column caption='explored이탈률' datatype='real' name='[explored_rate_fromview (copy)_1817819292745734]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1- SUM([explored]) / SUM([viewed])' />
+            </column>
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[explored_rate_fromview (copy)_1817819292745734]' derivation='User' name='[usr:explored_rate_fromview (copy)_1817819292745734:qk]' pivot='key' type='quantitative' />
+            <column caption='Viewed' datatype='integer' name='[viewed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:explored_rate_fromview (copy)_1817819292745734:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:explored_rate_fromview (copy)_1817819292745734:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:explored_rate_fromview (copy)_1817819292745734:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0DEB2021-7355-4EA4-9249-378F287DF576}' />
+    </worksheet>
+    <worksheet name='Registered'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[registered]' derivation='Sum' name='[sum:registered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:registered:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:registered:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{27BDF25D-C625-4F91-A706-E17ADCEA1CEF}' />
+    </worksheet>
+    <worksheet name='View-Exp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Explored rate compared to Viewed</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='explored_rate_fromview' datatype='real' name='[Calculation_1817819282776065]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([explored]) / SUM([viewed])' />
+            </column>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Explored' datatype='integer' name='[explored]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1817819282776065]' derivation='User' name='[usr:Calculation_1817819282776065:qk]' pivot='key' type='quantitative' />
+            <column caption='Viewed' datatype='integer' name='[viewed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282776065:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282776065:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282776065:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2756A072-2602-4345-825F-D84443F836B2}' />
+    </worksheet>
+    <worksheet name='Viewed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='viewed_rate' datatype='real' name='[Calculation_1817819282219008]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([viewed]) / SUM([registered])' />
+            </column>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[viewed]' derivation='Sum' name='[sum:viewed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1817819282219008]' derivation='User' name='[usr:Calculation_1817819282219008:qk]' pivot='key' type='quantitative' />
+            <column caption='Viewed' datatype='integer' name='[viewed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282219008:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:viewed:qk]' />
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282219008:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[sum:viewed:qk]</run>
+                <run fontsize='20'>&gt;</run>
+                <run fontsize='20'>Æ&#10;</run>
+                <run fontsize='20'><![CDATA[<[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:Calculation_1817819282219008:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{08D23BB2-91F5-409D-99B6-B4BE897F7CFB}' />
+    </worksheet>
+    <worksheet name='Viewed 이탈률'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='course_final' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15kvnc50i8uj3j1dhjs621djx8ky'>
+            <column caption='Course Filter' datatype='boolean' name='[Calculation_2072081362505728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;All&quot; THEN TRUE&#13;&#10;ELSE [Calculation_2072081364717569] = [Parameters].[Parameter 1]&#13;&#10;END' />
+            </column>
+            <column caption='Course Name Clean' datatype='string' name='[Calculation_2072081364717569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;WHEN &quot;HarvardX - CS50x&quot; THEN &quot;Harvard - Introduction to Computer Science&quot;&#13;&#10;WHEN &quot;HarvardX - CB22x&quot; THEN &quot;Harvard - The Ancient Greek Hero&quot;&#13;&#10;WHEN &quot;HarvardX - ER22x&quot; THEN &quot;Harvard - Justice&quot;&#13;&#10;WHEN &quot;HarvardX - PH207x&quot; THEN &quot;Harvard - Health in Numbers&quot;&#13;&#10;WHEN &quot;HarvardX - PH278x&quot; THEN &quot;Harvard - Human Health&quot;&#13;&#10;&#13;&#10;WHEN &quot;MITx - 6.00x&quot; THEN &quot;MIT - Intro to CS&quot;&#13;&#10;WHEN &quot;MITx - 6.002x&quot; THEN &quot;MIT - Circuits and Electronics&quot;&#13;&#10;WHEN &quot;MITx - 3.091x&quot; THEN &quot;MIT - Solid-State Chemistry&quot;&#13;&#10;WHEN &quot;MITx - 2.01x&quot; THEN &quot;MIT - Elements of Structures&quot;&#13;&#10;WHEN &quot;MITx - 7.00x&quot; THEN &quot;MIT - Introduction to Biology&quot;&#13;&#10;WHEN &quot;MITx - 8.02x&quot; THEN &quot;MIT - Electricity and Magnetism&quot;&#13;&#10;WHEN &quot;MITx - 8.MReV&quot; THEN &quot;MIT - Mechanics ReView&quot;&#13;&#10;WHEN &quot;MITx - 14.73x&quot; THEN &quot;MIT - The Challenges of Global Poverty&quot;&#13;&#10;ELSE [Calculation_2072081366052866]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Course Code' datatype='string' name='[Calculation_2072081366052866]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([course_id], &quot;/&quot;, 1) + &quot; - &quot; + SPLIT([course_id], &quot;/&quot;, 2)' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2072081362505728]' derivation='None' name='[none:Calculation_2072081362505728:nk]' pivot='key' type='nominal' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[viewed_rate (copy)_1817819292450821]' derivation='User' name='[usr:viewed_rate (copy)_1817819292450821:qk]' pivot='key' type='quantitative' />
+            <column caption='Viewed' datatype='integer' name='[viewed]' role='measure' type='quantitative' />
+            <column caption='viewed이탈률' datatype='real' name='[viewed_rate (copy)_1817819292450821]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1-SUM([viewed]) / SUM([registered])' />
+            </column>
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:viewed_rate (copy)_1817819292450821:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:viewed_rate (copy)_1817819292450821:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[usr:viewed_rate (copy)_1817819292450821:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5BBECDB3-1442-4EA2-A88B-EE9DA9BB7E2D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='학습 퍼널'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+          <calculation class='tableau' formula='&quot;All&quot;' />
+          <members>
+            <member value='&quot;All&quot;' />
+            <member value='&quot;Harvard - Health in Numbers&quot;' />
+            <member value='&quot;Harvard - Human Health&quot;' />
+            <member value='&quot;Harvard - Introduction to Computer Science&quot;' />
+            <member value='&quot;Harvard - Justice&quot;' />
+            <member value='&quot;Harvard - The Ancient Greek Hero&quot;' />
+            <member value='&quot;MIT - Circuits and Electronics&quot;' />
+            <member value='&quot;MIT - Electricity and Magnetism&quot;' />
+            <member value='&quot;MIT - Elements of Structures&quot;' />
+            <member value='&quot;MIT - Intro to CS&quot;' />
+            <member value='&quot;MIT - Introduction to Biology&quot;' />
+            <member value='&quot;MIT - Mechanics ReView&quot;' />
+            <member value='&quot;MIT - Solid-State Chemistry&quot;' />
+            <member value='&quot;MIT - The Challenges of Global Poverty&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='28' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='26' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='24' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                <zone h='19500' id='3' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                  <zone fixed-size='791' forceUpdate='true' h='19500' id='12' is-fixed='true' type-v2='text' w='79900' x='800' y='1000'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='28'>학습 퍼널</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone custom-title='true' h='19500' id='29' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='18500' x='80700' y='1000'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='10'>Course Selector</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='29500' id='5' param='horz' type-v2='layout-flow' w='74202' x='24998' y='20500'>
+                  <zone fixed-size='242' h='29500' id='9' is-fixed='true' name='Viewed' w='25000' x='24998' y='20500'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='29500' id='10' name='Explored' w='24601' x='49998' y='20500'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='29500' id='11' name='Certified' w='24601' x='74599' y='20500'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='29500' id='13' name='Registered' w='24198' x='800' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24999' id='14' name='View-Exp' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24999' id='15' name='Exp-Cert' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24001' id='16' param='horz' type-v2='layout-flow' w='98400' x='800' y='74999'>
+                  <zone fixed-size='163' forceUpdate='true' h='23251' id='17' is-fixed='true' type-v2='text' w='17100' x='1100' y='75374'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>단계별</run>
+                      <run fontalignment='1'>Æ&#10;</run>
+                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>이탈률</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='3' h='23251' id='21' is-fixed='true' type-v2='empty' w='300' x='18200' y='75374'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='background-color' value='#000000' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23251' id='18' name='Viewed 이탈률' w='26800' x='18500' y='75374'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23251' id='19' name='Explored 이탈률' w='26800' x='45300' y='75374'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23251' id='20' name='Certified 이탈률' w='26800' x='72100' y='75374'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='791' forceUpdate='true' h='19500' id='12' type-v2='text' w='79900' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='28'>학습 퍼널</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='19500' id='29' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='18500' x='80700' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='10'>Course Selector</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='222' h='29500' id='13' is-fixed='true' name='Registered' w='24198' x='800' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='222' h='29500' id='9' is-fixed='true' name='Viewed' w='25000' x='24998' y='20500'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='222' h='29500' id='10' is-fixed='true' name='Explored' w='24601' x='49998' y='20500'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='222' h='29500' id='11' is-fixed='true' name='Certified' w='24601' x='74599' y='20500'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='24999' id='14' is-fixed='true' name='View-Exp' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='24999' id='15' is-fixed='true' name='Exp-Cert' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' forceUpdate='true' h='23251' id='17' type-v2='text' w='17100' x='1100' y='75374'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>단계별</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>이탈률</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23251' id='18' is-fixed='true' name='Viewed 이탈률' w='26800' x='18500' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23251' id='19' is-fixed='true' name='Explored 이탈률' w='26800' x='45300' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23251' id='20' is-fixed='true' name='Certified 이탈률' w='26800' x='72100' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5C2BBFBE-157C-4775-9251-881D8A291CF4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Registered'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.15kvnc50i8uj3j1dhjs621djx8ky].[none:Calculation_2072081362505728:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F2C9C90-4804-455E-A472-07502D02552F}' />
+    </window>
+    <window class='worksheet' name='Viewed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F119FD79-0D73-41E6-AF0B-233C10D4C595}' />
+    </window>
+    <window class='worksheet' name='Explored'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C501318A-D259-4E2A-836E-F8EE69FFF677}' />
+    </window>
+    <window class='worksheet' name='Certified'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CA5CC512-D8E3-485B-8E39-09A46309BEC3}' />
+    </window>
+    <window class='worksheet' name='View-Exp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{54201CFA-8F27-41C8-BFCC-030F930B4523}' />
+    </window>
+    <window class='worksheet' name='Exp-Cert'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C5CBFD02-8368-444D-A321-E520B1DF0E65}' />
+    </window>
+    <window class='worksheet' name='Viewed 이탈률'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B93534FF-A727-44E0-97C0-6EAD517B108A}' />
+    </window>
+    <window class='worksheet' name='Explored 이탈률'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4C4EA5AD-C197-4862-A5A8-55C21EBEE274}' />
+    </window>
+    <window class='worksheet' name='Certified 이탈률'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5ACBCE3A-B7D1-4F97-9306-3AB497845161}' />
+    </window>
+    <window class='dashboard' maximized='true' name='학습 퍼널'>
+      <viewpoints>
+        <viewpoint name='Certified'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Certified 이탈률'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Exp-Cert'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Explored'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Explored 이탈률'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Registered'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='View-Exp'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Viewed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Viewed 이탈률'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2C7B0AF0-25BC-4340-ACD5-4FE834187A2C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Certified' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Certified 이탈률' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Exp-Cert' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAE4klEQVR4nO3XPUgcWwCG4W9XRdeAooKuuAQsBAUhFtFCrKxtbLS1kGAXJKnEQrARsRCs
+      ktZChHTJFiJooY3iDwquP6RxNSKikCCu6OqcWwSWa3HD5RaJ3O99ujlzzjAD8zJnYiGEIMBU
+      /E/fAPAnEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQD+16Io+uX54t90H8B/srOzo6mpKU1PT6umpka5XE7j4+NKJBKSpEQioeHh
+      YRUXP32Vz87O9PHjR5WXl+vm5kaDg4Oqr6/Xp0+flMlkJEmlpaUEgOcrl8vpy5cvevXqlR4e
+      HiRJV1dXamxs1Js3b/5xXRRF+vDhg96+favq6mpFUaQoinR5ealUKqW+vj7F43Gtra2xBcLz
+      FELQ/Py8ent7VVJSUhj/9u2bUqnUL9dms1mlUilVVVUpiiLFYjEVFxcrmUyqq6tL8fjP1/72
+      9pYvAJ6ng4MDhRDU0tKixcXFwviPHz+UTqe1urqqZDKpnp4eNTY2KhaLFeZks1mdnZ1pYmJC
+      klRUVKShoSFVVFRIkvL5vJaXl7W5uSkF4Jm5uroK79+/D0dHR+Hr169hbGwsrK+vh+vr6yfz
+      Hh8fw8jISLi4uHgyvrKyEtLpdOH45OQkTE5OhhBCyGaz4d27dyGTyYQoigJbIDw79/f3ev36
+      tba2trSxsaHz83Pt7u7q+/fvCiEU5sXjcTU0NCiXyz1Z39TUpL29vcLcyspKhRB0d3enmZkZ
+      jY6OqqWl5efW6Lc+GfAvJJNJ9ff3F47Pz8/V09Ojuro6zc7Oqrq6Ws3NzTo9PdXJyYkaGhp0
+      e3urubk5DQwMqLa2VkVFRVpYWFBra6s+f/6szs5OZTIZvXjxQvv7+4Vrx8LfkwKeoaOjI718
+      +VJlZWW6v7/XxsaGDg8PVVtbq+7ubiUSCeXzeW1tbamjo0OxWEz5fF5LS0s6Pj5We3u72tra
+      dHl5qe3t7SfXJgBY4x8A1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1v4C1wPS/SRlqckAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Explored' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAHRklEQVR4nO3bT0hU7x7H8c8ZnUQtYQTLFEyRiLSk0sZIKiqoxDZRRBAJLYoWEUR/CKKN
+      i9pEGFSbFmKBVIuMhIJwNkaEiaaBIUOajZCpk/9m8N/onLsQvD+pe7lcuDS/+32/luc8j4xw
+      3uc8z3h0XNd1BRjl+dMfAPiTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYA
+      MI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBg
+      GgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0
+      AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkE
+      ANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgA
+      phEATCMAmEYAMC35T38A4N+ZmZlRMBiUx+PRhg0b5PV6FYvFNDk5uWyc1+tVRkbGL/Onp6cV
+      DAaVnp6uwsJCOY6zdC4SichxXdf9n/8WwH+hv79f9fX1Kioq0sLCgtra2nTt2jXNzs7qxYsX
+      S+MmJiY0OzurmpqaZfMDgYDevn2rkpISjYyMKC8vT5WVlZqamlJjY6OampoIAIkrHo/LcZyl
+      u3YgEND8/LwOHjy4bFxdXZ1KS0tVUlKy7Hh/f7/y8vLk8Xjkuq5u376tK1eu6MOHD5KkUCjE
+      HgCJy+PxLF38Y2Njam1tVXFx8bIxkUhE3759++W4JOXn58vjWbzEh4eHlZOTI0ny+/3y+/3y
+      eDzsAZDYWltb9eTJE4XDYV24cEG5ubnLzr98+VJVVVVKSkr67XzXdfX+/Xu9evVKly9f/uU8
+      ASChlZeXy+/3KxwOq76+XklJSdq2bZukxQ3y58+fdeLEid/Ojcfjqqur08LCgm7cuKGUlJRf
+      xrAEQsJzHEdZWVk6duyYWltbl443NTWpsrLyX979A4GAUlNTdebMmd9e/BJPACSwQCCg8fFx
+      bdy4UQsLC2psbNThw4clLd7929vbdfPmzWVz2tvbNTMzo4qKCjU3N2vv3r1qaWmRJKWlpams
+      rEx9fX2amJhQKBTiWyAkrlgspk+fPikYDCo5OVl+v195eXlyHEeTk5MaHR1Vfn7+0vh4PK6a
+      mhqdO3dO2dnZ6uzs1MTExNL59PR0lZaWqru7Wz9//pQkAsD/j7GxMX38+FH79u37j+cQAExj
+      EwzTCACmEQBMIwD8Lbiuq1AopC9fvmh2dva3Y2KxmHp7e/X9+3f9dWvruq4GBwcVCoUUj8eX
+      jkejUTbBSHzz8/Oqra2Vz+dTenq65ubmVF1dvWzM2NiYamtrVVRUpMHBQWVmZurUqVOKx+O6
+      d++eJCk1NVUDAwO6fv26IpGIHj58yB/CkPjevHmjLVu2aP/+/cve5/+rpqYmHT9+XMXFxXJd
+      V7du3dLw8LBisZgWFhZ08eJFOY6j58+fq62tTcPDwzp69ChLICQ213XV0dGhiooKRSIRRaNR
+      /W7RMjo6qqysLEmLr06Ul5erq6tLPp9P0WhU0WhUs7Oz+vr1qwoKChSLxbRixQqeAEh8P378
+      0N27d5WRkaGRkRFlZ2fr7Nmzy54G27dv1+PHj3X69GlNT0+rp6dHa9asUVpamg4dOqRLly4p
+      NTVVu3btUm5urioqKvT06VMCQOLz+Xy6evXq0j+23LlzR6FQSOvWrVsas3PnTqWkpKihoUGr
+      Vq1SZmamVq5cqaGhIbW0tOj+/ftKTk7Wo0eP1NnZqa1bt+rkyZMsgZD4fD6fhoaGJC0ub1av
+      Xv3LN0GO46isrEznz59XdXW1wuGwNm/erGAwqPXr18vr9cpxHPn9frW3t0uS1q5dSwBIbI7j
+      6MiRI3rw4IEGBgbU09OjYDCo/Px8jY+P69mzZ3JdV5OTk+ro6NDQ0JCam5s1Pz+vnJwcbdq0
+      Se/evVN3d7f6+vrU0NCg3bt3//Pn8zUo/g56e3uX3u+vqqpSZmampqam1NXVpR07dmhubk6v
+      X79WKBRSYWGhDhw4IK/XK0kKh8Nqbm7WzMyM9uzZo4KCAkmLG2wCgGksgWAaAcA0AoBpBADT
+      CACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYR
+      AEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMA
+      mEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAw
+      jQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAa
+      AcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHAtH8AD94kJSWL+ngAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Explored 이탈률' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Registered' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='View-Exp' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAEO0lEQVR4nO3Yz4uNbRzH8c+MH8PGxq+SkrAxi8lGYW9B+QdsLPwJLCys/A2zsrBRFnaK
+      lJIdC1mYZJJfI9QIU3M0COc8q2ceSnp2M/m8XrvzPZ2r+67rfe6re2w0Go0CpcZX+gJgJQmA
+      agKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJ
+      gGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCq
+      CYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYA
+      qgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgm
+      AKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKqtXekLgN8ZjUaZmZnJxYsXc+bM
+      mezatWv5u7dv3+bSpUs5cOBAjh079sc1pqenMxgMcu7cuQyHw1y+fDlPnjzJ+Ph4tmzZIgBW
+      p5s3b+bNmzfZvXt3hsPh8nx2djbXrl3L/v378/Xr1z+ucffu3WzdujUfP35Mkjx+/DiDwSAX
+      LlxIkty4ccMRiNXp6NGjOX36dDZt2vTLfN++fTl79mx27tz5x99/+vQpt2/fzvHjx5dnExMT
+      WbNmzfLnsbExTwBWp5836v+Z/+zfo87Jkyezdu1/W3zPnj2ZmZnJ+fPns379+mzfvl0A/H2u
+      X7+eiYmJDIfDvHjxIoPBIC9fvszi4mIWFhaWj0C3bt0SAH+fzZs3Z2lpKffv38/379/z/v37
+      PHz4MIPBIFNTUxkbG0uSTE1NCYDV6fnz5/n8+XPevXuXp0+fZmlpKXv37s3CwkI+fPiQubm5
+      zM/P59GjR9mxY0c2bNiQK1eu5NSpUzl8+PDyOl++fMmzZ89y4sSJvHr1KtPT09m4cWPWrVuX
+      q1evZmw0Go1W8D7ht+7du5fFxcVfZkeOHMnr168zNzf3y3xycjLbtm3LgwcPcvDgweV/+CT5
+      8eNHZmdnMzk5mdFolPn5+dy5cyffvn3LoUOHBEA3r0GpJgCqCYBqAqCaAKgmAKoJgGoCoJoA
+      qCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCa
+      AKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKg
+      mgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoC
+      oJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBq
+      AqCaAKj2DyT/1oeN6/m+AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Viewed' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Viewed 이탈률' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='학습 퍼널' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
