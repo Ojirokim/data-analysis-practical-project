@@ -20,6 +20,40 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
+        <calculation class='tableau' formula='&quot;All&quot;' />
+        <members>
+          <member value='&quot;All&quot;' />
+          <member value='&quot;Harvard - Health in Numbers&quot;' />
+          <member value='&quot;Harvard - Human Health&quot;' />
+          <member value='&quot;Harvard - Introduction to Computer Science&quot;' />
+          <member value='&quot;Harvard - Justice&quot;' />
+          <member value='&quot;Harvard - The Ancient Greek Hero&quot;' />
+          <member value='&quot;MIT - Circuits and Electronics&quot;' />
+          <member value='&quot;MIT - Electricity and Magnetism&quot;' />
+          <member value='&quot;MIT - Elements of Structures&quot;' />
+          <member value='&quot;MIT - Intro to CS&quot;' />
+          <member value='&quot;MIT - Introduction to Biology&quot;' />
+          <member value='&quot;MIT - Mechanics ReView&quot;' />
+          <member value='&quot;MIT - Solid-State Chemistry&quot;' />
+          <member value='&quot;MIT - The Challenges of Global Poverty&quot;' />
+        </members>
+      </column>
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Parameter 1]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;HarvardX/CB22x/2013_Spring&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+    </datasource>
     <datasource caption='course_final' inline='true' name='federated.15kvnc50i8uj3j1dhjs621djx8ky' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -187,6 +221,7 @@
             <ordinal>8</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -313,6 +348,7 @@
             <ordinal>18</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -448,40 +484,6 @@
           </object>
         </objects>
       </object-graph>
-    </datasource>
-    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
-      <aliases enabled='yes' />
-      <column caption='Course Selector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;All&quot;'>
-        <calculation class='tableau' formula='&quot;All&quot;' />
-        <members>
-          <member value='&quot;All&quot;' />
-          <member value='&quot;Harvard - Health in Numbers&quot;' />
-          <member value='&quot;Harvard - Human Health&quot;' />
-          <member value='&quot;Harvard - Introduction to Computer Science&quot;' />
-          <member value='&quot;Harvard - Justice&quot;' />
-          <member value='&quot;Harvard - The Ancient Greek Hero&quot;' />
-          <member value='&quot;MIT - Circuits and Electronics&quot;' />
-          <member value='&quot;MIT - Electricity and Magnetism&quot;' />
-          <member value='&quot;MIT - Elements of Structures&quot;' />
-          <member value='&quot;MIT - Intro to CS&quot;' />
-          <member value='&quot;MIT - Introduction to Biology&quot;' />
-          <member value='&quot;MIT - Mechanics ReView&quot;' />
-          <member value='&quot;MIT - Solid-State Chemistry&quot;' />
-          <member value='&quot;MIT - The Challenges of Global Poverty&quot;' />
-        </members>
-      </column>
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[Parameter 1]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;HarvardX/CB22x/2013_Spring&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;All&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
     </datasource>
   </datasources>
   <shared-views>
@@ -1258,62 +1260,12 @@
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98000' id='28' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
-            <zone h='98000' id='26' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
-              <zone h='98000' id='24' type-v2='layout-basic' w='98400' x='800' y='1000'>
-                <zone h='19500' id='3' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
-                  <zone fixed-size='791' forceUpdate='true' h='19500' id='12' is-fixed='true' type-v2='text' w='79900' x='800' y='1000'>
-                    <formatted-text>
-                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='28'>학습 퍼널</run>
-                    </formatted-text>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='solid' />
-                      <format attr='border-width' value='3' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone custom-title='true' h='19500' id='29' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='18500' x='80700' y='1000'>
-                    <formatted-text>
-                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='10'>Course Selector</run>
-                    </formatted-text>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='solid' />
-                      <format attr='border-width' value='3' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                </zone>
-                <zone h='29500' id='5' param='horz' type-v2='layout-flow' w='74202' x='24998' y='20500'>
-                  <zone fixed-size='242' h='29500' id='9' is-fixed='true' name='Viewed' w='25000' x='24998' y='20500'>
-                    <layout-cache type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='solid' />
-                      <format attr='border-width' value='3' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='29500' id='10' name='Explored' w='24601' x='49998' y='20500'>
-                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='solid' />
-                      <format attr='border-width' value='3' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='29500' id='11' name='Certified' w='24601' x='74599' y='20500'>
-                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='solid' />
-                      <format attr='border-width' value='3' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                </zone>
-                <zone h='29500' id='13' name='Registered' w='24198' x='800' y='20500'>
+            <zone h='98000' id='24' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='19500' id='3' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='791' forceUpdate='true' h='19500' id='12' is-fixed='true' type-v2='text' w='79900' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='28'>학습 퍼널</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='solid' />
@@ -1321,7 +1273,10 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='24999' id='14' name='View-Exp' w='49200' x='800' y='50000'>
+                <zone custom-title='true' h='19500' id='29' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='18500' x='80700' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='10'>Course Selector</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='solid' />
@@ -1329,7 +1284,10 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='24999' id='15' name='Exp-Cert' w='49200' x='50000' y='50000'>
+              </zone>
+              <zone h='29500' id='5' param='horz' type-v2='layout-flow' w='74202' x='24998' y='20500'>
+                <zone fixed-size='242' h='29500' id='9' is-fixed='true' name='Viewed' w='25000' x='24998' y='20500'>
+                  <layout-cache type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='solid' />
@@ -1337,62 +1295,104 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='24001' id='16' param='horz' type-v2='layout-flow' w='98400' x='800' y='74999'>
-                  <zone fixed-size='163' forceUpdate='true' h='23251' id='17' is-fixed='true' type-v2='text' w='17100' x='1100' y='75374'>
-                    <formatted-text>
-                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>단계별</run>
-                      <run fontalignment='1'>Æ&#10;</run>
-                      <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>이탈률</run>
-                    </formatted-text>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone fixed-size='3' h='23251' id='21' is-fixed='true' type-v2='empty' w='300' x='18200' y='75374'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='0' />
-                      <format attr='background-color' value='#000000' />
-                    </zone-style>
-                  </zone>
-                  <zone h='23251' id='18' name='Viewed 이탈률' w='26800' x='18500' y='75374'>
-                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='23251' id='19' name='Explored 이탈률' w='26800' x='45300' y='75374'>
-                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='23251' id='20' name='Certified 이탈률' w='26800' x='72100' y='75374'>
-                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
+                <zone h='29500' id='10' name='Explored' w='24601' x='49998' y='20500'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='solid' />
                     <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
+                <zone h='29500' id='11' name='Certified' w='24601' x='74599' y='20500'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='29500' id='13' name='Registered' w='24198' x='800' y='20500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24999' id='14' name='View-Exp' w='49200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24999' id='15' name='Exp-Cert' w='49200' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24001' id='16' param='horz' type-v2='layout-flow' w='98400' x='800' y='74999'>
+                <zone fixed-size='163' forceUpdate='true' h='23251' id='17' is-fixed='true' type-v2='text' w='17100' x='1100' y='75374'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>단계별</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='20'>이탈률</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='3' h='23251' id='21' is-fixed='true' type-v2='empty' w='300' x='18200' y='75374'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone h='23251' id='18' name='Viewed 이탈률' w='26800' x='18500' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23251' id='19' name='Explored 이탈률' w='26800' x='45300' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23251' id='20' name='Certified 이탈률' w='26800' x='72100' y='75374'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                </zone-style>
               </zone>
             </zone>
           </zone>
@@ -1408,8 +1408,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='36' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='791' forceUpdate='true' h='19500' id='12' type-v2='text' w='79900' x='800' y='1000'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontname='맑은 고딕' fontsize='28'>학습 퍼널</run>
@@ -1506,7 +1506,7 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='178' h='23251' id='18' is-fixed='true' name='Viewed 이탈률' w='26800' x='18500' y='75374'>
-                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <layout-cache type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1516,7 +1516,7 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='178' h='23251' id='19' is-fixed='true' name='Explored 이탈률' w='26800' x='45300' y='75374'>
-                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <layout-cache type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1526,7 +1526,7 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='178' h='23251' id='20' is-fixed='true' name='Certified 이탈률' w='26800' x='72100' y='75374'>
-                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <layout-cache type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1549,7 +1549,7 @@
       <simple-id uuid='{5C2BBFBE-157C-4775-9251-881D8A291CF4}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
     <window class='worksheet' name='Registered'>
       <cards>
         <edge name='left'>
@@ -1785,7 +1785,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1825,7 +1825,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='29' />
       <simple-id uuid='{2C7B0AF0-25BC-4340-ACD5-4FE834187A2C}' />
     </window>
   </windows>
@@ -1869,17 +1869,29 @@
     </thumbnail>
     <thumbnail height='192' name='Certified 이탈률' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
-      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
-      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
-      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
-      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
-      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
-      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
-      fBUOM1sAAAAASUVORK5CYII=
+      AAAEkElEQVR4nO3YQSt0bxzG8WuMMcZMmmkyiryJyYoFr8DCG1CSbBSbsaRMkylSFmJjbSfv
+      wNLKgmxmISUpJApDM8f9LNTk30PP0vy7vp/Vmc49d2fz7fzOHQshBAGmOn77AYDfRACwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw1vnb
+      DwD8y/v7u6Ioav2Ox+NKJpP/WVOv19VoNNTb2/vtHlEU6f7+XiEE9fX1KR6PSyIA/A9Uq1VF
+      UaRYLCZJKhaLmpiYaN1vNpsql8t6fX3V5ubmX/+/ubnRxsaG8vm8YrGY7u/vVSqVVCgUCADt
+      rdls6vn5WdVqtRXAVyEEHRwcaHR0VEdHR9/ukc1mValUlEgkJEnHx8c6PDzUzMwM3wBoby8v
+      L8pkMj/ev76+Vq1W0/j4+I9rUqmUurq6WgE9PDwon89LYgRCm3t6elKtVlOlUlE6nVaxWNTI
+      yIg6OzsVRZH29vY0Ozv77dvhq9vbW52cnOji4kJdXV2amppSLBbjDYD2Njg4qPX1dU1PT2ty
+      clJXV1fa2dlRCEH7+/saGxtToVBQCEGS9PHx0br+Kooi1et1DQ0Nqbu7W7VaTSEExcJ3q4E2
+      1Wg0VCqVVC6Xtbq62prroyjS6emphoeHtbCwoGw2++Med3d32tra0tLSEiMQ2tvZ2Zn6+vrU
+      398vSTo/P1cul1M6ndba2lprXb1e1/LyslZWViR9jk4vLy8aGBjQ5eWlCoWCUqmUpM9ToUwm
+      o2QySQBob7lcTru7u2o2m5I+T30WFxf/WtfR0dGKRPoM5fT0VHNzc3p8fNT29ra6u7sVQlA8
+      Htf8/LwSiQQjENpfCEFvb2+KokjpdPqfH7w/7VGv1xVCUE9PT2sPAoA1ToFgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg7Q9vYfUQTkbgTAAAAABJRU5E
+      rkJggg==
     </thumbnail>
     <thumbnail height='192' name='Exp-Cert' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
